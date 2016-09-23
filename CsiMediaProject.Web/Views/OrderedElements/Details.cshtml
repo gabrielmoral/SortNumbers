@@ -1,0 +1,42 @@
+﻿@model CsiMediaProject.Web.Models.OrderedElement
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderedElement</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Numbers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numbers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SortType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SortType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SortDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SortDuration)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
