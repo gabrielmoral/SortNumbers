@@ -98,8 +98,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\OrderedElementTestShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\OrderedNumbersControllerTest.cs" />
+    <Compile Include="Models\OrderedElementShould.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

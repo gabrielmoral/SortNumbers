@@ -3,9 +3,16 @@ using System.Linq;
 
 namespace CsiMediaProject.Test
 {
-    public class NumberOrderer
+    public static class NumbersOrderer
     {
-        public List<int> SortBy(SortType sortType, List<int> numbers)
+        public static string SortBy(SortType sortType, string numbers)
+        {
+            return numbers.ConvertToList()
+                    .SortWith(sortType, SortBy)
+                    .ToText();
+        }
+
+        private static IEnumerable<int> SortBy(SortType sortType, IEnumerable<int> numbers)
         {
             if (sortType == SortType.Ascending)
             {

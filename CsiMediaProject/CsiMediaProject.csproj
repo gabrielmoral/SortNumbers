@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberOrderer.cs" />
+    <Compile Include="NumbersOrderer.cs" />
+    <Compile Include="NumbersConverter.cs" />
     <Compile Include="SortType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

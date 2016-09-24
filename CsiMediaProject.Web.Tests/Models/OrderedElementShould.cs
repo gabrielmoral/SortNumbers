@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace CsiMediaProject.Web.Tests.Controllers
 {
     [TestClass]
-    public class OrderedElementTestShould
+    public class OrderedElementShould
     {
         [TestMethod]
         public void BeInvalidIfNumberDoNotMatchPattern()
