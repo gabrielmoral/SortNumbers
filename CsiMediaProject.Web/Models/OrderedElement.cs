@@ -12,14 +12,15 @@ namespace CsiMediaProject.Web.Models
         public int Id { get; set; }
 
         [Required]
-        [DataType(DataType.MultilineText)]
         [RegularExpression(SeparatedCommaNumberRegExpr)]
         public string Numbers { get; set; }
 
         [Required]
+        [Display(Name = "Sort type")]
         public SortType SortType { get; set; }
 
         [Required]
+        [Display(Name = "Sort duration")]
         public TimeSpan SortDuration { get; set; }
     }
 }

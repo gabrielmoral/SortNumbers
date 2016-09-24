@@ -7,7 +7,7 @@ namespace CsiMediaProject.Test
     {
         public List<int> SortBy(SortType sortType, List<int> numbers)
         {
-            if (sortType == SortType.Asc)
+            if (sortType == SortType.Ascending)
             {
                 return numbers.OrderBy(x => x).ToList();
             }

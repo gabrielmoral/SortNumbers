@@ -15,7 +15,7 @@ namespace CsiMediaProject.Web.Tests.Controllers
             var orderedElement = new OrderedElement
             {
                 Numbers = "1,2 3",
-                SortType = SortType.Asc
+                SortType = SortType.Ascending
             };
 
             Validator.TryValidateObject(orderedElement,
@@ -31,7 +31,7 @@ namespace CsiMediaProject.Web.Tests.Controllers
             var orderedElement = new OrderedElement
             {
                 Numbers = "1,2,3",
-                SortType = SortType.Asc
+                SortType = SortType.Ascending
             };
 
             Validator.TryValidateObject(orderedElement,

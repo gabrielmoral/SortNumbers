@@ -1,13 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace CsiMediaProject
+﻿namespace CsiMediaProject
 {
     public enum SortType
     {
-        [Display(Name = "Ascending")]
-        Asc,
-
-        [Display(Name = "Descending")]
-        Desc
+        Ascending,
+        Descending
     }
 }
