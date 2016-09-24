@@ -60,7 +60,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="NumberOrderer.cs" />
     <Compile Include="NumberOrdererTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -5,12 +5,15 @@ namespace CsiMediaProject.Web.Models
 {
     public class OrderedElement
     {
+        private const string SeparatedCommaNumberRegExpr = @"(\d+)(,*\d+)*";
+
         [Required]
         [Key]
         public int Id { get; set; }
 
         [Required]
         [DataType(DataType.MultilineText)]
+        [RegularExpression(SeparatedCommaNumberRegExpr)]
         public string Numbers { get; set; }
 
         [Required]

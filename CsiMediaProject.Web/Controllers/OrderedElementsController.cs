@@ -21,7 +21,8 @@ namespace CsiMediaProject.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            OrderedElement orderedElement = db.OrderedElements.Find(id);
+            OrderedElement orderedElement = db.OrderedElements.Where(x => x.Id == id)
+                                                                .FirstOrDefault();
             if (orderedElement == null)
             {
                 return HttpNotFound();
