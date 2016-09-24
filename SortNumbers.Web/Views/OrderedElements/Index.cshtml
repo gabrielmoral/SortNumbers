@@ -9,7 +9,12 @@
 <p>
     @Html.ActionLink("Create new ordination", "Create")
 </p>
-<table class="table">
+<p>
+    <button onclick="$('#orderedNumbers').tableExport({ type: 'xml', escape: 'false' });" class="btn btn-default">
+        Export to XML
+    </button>
+</p>
+<table class="table" id="orderedNumbers">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Numbers)
@@ -43,3 +48,10 @@
         </tr>
     }
 </table>
+<button id="export" onclick="$('#orderedNumbers').tableExport({ type: 'xml', escape: 'false' });"></button>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/tableExport.js")
+    @Scripts.Render("~/Scripts/jquery.base64.js")
+
+}
